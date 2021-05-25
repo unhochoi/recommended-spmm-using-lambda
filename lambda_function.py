@@ -2,8 +2,6 @@ import json
 import boto3
 import sys
 
-import logging
-
 # EFS 경로의 패키지를 import 가능하게 수정
 sys.path.append("/mnt/efs/packages")
 import numpy as np
