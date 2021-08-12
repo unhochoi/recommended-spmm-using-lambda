@@ -7,7 +7,7 @@ sys.path.append("/mnt/efs/packages")
 import numpy as np
 import xgboost as xgb
 
-# S3에서 모델 다운로드
+# S3에서 모델 다운로드 (실제 배포에서는 EFS 에서 모델 가져오는 방식으로 진행)
 s3 = boto3.client('s3')
 s3.download_file('unho-spmm', 'model/sp_smdm_xgb.model', '/tmp/sp_smdm_xgb.model' )
 s3.download_file('unho-spmm', 'model/bz_smsm_xgb.model', '/tmp/bz_smsm_xgb.model' )
