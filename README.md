@@ -9,7 +9,9 @@
 ### Post command example
 
 ```
-curl -X POST "APIGATEWAYPOSTURL" \
+curl \
+-H "Content-Type: application/json" \
+-X POST "APIGATEWAYPOSTURL" \
 -d '{
   "lr": 97366,
   "lc": 33288,
@@ -20,3 +22,4 @@ curl -X POST "APIGATEWAYPOSTURL" \
   "rnnz": 25785518
 }'
 ```
+
